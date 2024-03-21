@@ -1,0 +1,49 @@
+{
+  "vehicles": [
+    {
+      "id": 1,
+      "registrationNumber": "AB12 CDE",
+      "motTestNumber": "1234567890123456",
+      "make": "Ford",
+      "model": "Focus",
+      "year": 2018,
+      "fuelType": "Petrol",
+      "mileage": 45000,
+      "testDate": "2024-02-20",
+      "expiryDate": "2025-02-20",
+      "testResult": "Pass",
+      "advisoryItems": "Front brake pads, advice: Wear close to limit; Tyre tread depth, advice: Approaching legal limit",
+      "defects": "Rear brake light, defect: Not working"
+    },
+    {
+      "id": 2,
+      "registrationNumber": "XYZ987",
+      "motTestNumber": "7890123456789012",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "year": 2020,
+      "fuelType": "Diesel",
+      "mileage": 30000,
+      "testDate": "2024-02-21",
+      "expiryDate": "2025-02-21",
+      "testResult": "Pass",
+      "advisoryItems": "Oil leak, advice: Monitor for any worsening; Windscreen wipers, advice: Slight wear",
+      "defects": ""
+    },
+    {
+      "id": 3,
+      "registrationNumber": "JKL456",
+      "motTestNumber": "5678901234567890",
+      "make": "Honda",
+      "model": "Civic",
+      "year": 2019,
+      "fuelType": "Hybrid",
+      "mileage": 25000,
+      "testDate": "2024-02-22",
+      "expiryDate": "2025-02-22",
+      "testResult": "Fail",
+      "advisoryItems": "",
+      "defects": "Exhaust emissions, defect: Excessive smoke; Front suspension, defect: Worn components"
+    }
+  ]
+}

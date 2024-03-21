@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="js/mot.js" >
+    </script>
+</head>
+<body>
+
+  <header class="header">
+      <div class="header image col-1 ">
+        <img src="DVSA-Logo.jpg" alt="DVSA Logo" width="100px" />
+      </div>
+      <div class="header text col-11 ">DVSA MOT PLATFORM</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="MOTPage.html">Home</a></li>
+      <li><a href="NewMOTTestPage.html">New Test...</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <article>
+      <h2>Search for test:</h2>
+      <label for="searchText">Search: </label>
+      <input type="text" id="searchText" placeholder="Search Text" value="AB12 CDE" />
+      <br/>
+      <br/>
+      <button id="find_car_by_mot_number" class="styled-button" onclick="find_car_by_mot_number()">Search by MOT #</button>
+      <button id="find_car_by_reg" class="styled-button" onclick="find_car_by_reg()">Search by Reg</button>
+    </article>
+
+    <article>
+      <h2>Search Results...</h2>
+      <div id="results"></div>
+      <div id="mot_results_table" hidden>
+      <table>
+        <tr>
+          <td>Registration: </td>
+          <td><div id="registrationNumber"></div></td>
+        </tr>
+        <tr>
+          <td>MOT No.: </td>
+          <td><div id="motTestNumber"></div></td>
+        </tr>
+        <tr>
+          <td>Make: </td>
+          <td><div id="make"></div></td>
+        </tr>
+        <tr>
+          <td>Model: </td>
+          <td><div id="model"></div></td>
+        </tr>
+        <tr>
+          <td>Year: </td>
+          <td><div id="year"></div></td>
+        </tr>
+        <tr>
+          <td>Fuel Type: </td>
+          <td><div id="fuelType"></div></td>
+        </tr>
+        <tr>
+          <td>Mileage: </td>
+          <td><div id="mileage"></div></td>
+        </tr>
+        <tr>
+          <td>Test Date: </td>
+          <td><div id="testDate"></div></td>
+        </tr>
+        <tr>
+          <td>Expiry Date: </td>
+          <td><div id="expiryDate"></div></td>
+        </tr>
+        <tr>
+          <td>Test Result: </td>
+          <td><div id="testResult"></div></td>
+        </tr>
+        <tr>
+          <td>Advisory Items: </td>
+          <td><div id="advisoryItems"></div></td>
+        </tr>
+        <tr>
+          <td>Defects: </td>
+          <td><div id="defects"></div></td>
+        </tr>
+      </table>
+    </div>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 DVSA. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
