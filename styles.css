@@ -136,3 +136,10 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+
+table {
+    display: block;
+    height: 500px;
+  }
+
+.clear { clear: both; height: 180px; }

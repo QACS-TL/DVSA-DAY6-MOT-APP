@@ -133,24 +133,24 @@ async function fetchAndFilterVehicles(val, reg_or_motno) {
     console.log("STRINGIFY:" + JSON.stringify( formData ))
 
     // Assuming your server endpoint is http://localhost:5000/vehicles
-    fetch('http://127.0.0.1:5000/vehicles', {
+    fetch('http://localhost:5000/vehicles', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify( formData )
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Form submitted successfully:', data);
-        if (data.startsWith('Added')){
-          var frm = document.getElementById('motForm');
-          frm.reset(); 
-        }
-        element = document.getElementById('message');
-        element.innerText = data;
-        // Add any additional logic or feedback here
-    })
+    //.then(response => response.json())
+    // .then(data => {
+    //     console.log('Form submitted successfully:', data);
+    //     if (data.startsWith('Added')){
+    //       var frm = document.getElementById('motForm');
+    //       frm.reset(); 
+    //     }
+    //     element = document.getElementById('message');
+    //     element.innerText = data;
+    //     // Add any additional logic or feedback here
+    // })
     .catch(error => {
         alert(error);
         console.error('Error submitting form:', error);
